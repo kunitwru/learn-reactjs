@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
-import About from '../About/About';
-import Topics from '../Topics/Topics';
-import Home from '../Home/Home';
+import About from './About/About';
+import Topics from './Topics/Topics';
+import Home from './Home/Home';
 
 export default class Content extends Component {
     render () {
