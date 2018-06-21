@@ -1,7 +1,11 @@
 :root {
   --jumbotron-padding-y: 3rem;
 }
-
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
