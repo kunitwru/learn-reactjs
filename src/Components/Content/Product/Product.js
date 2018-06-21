@@ -27,9 +27,12 @@ export default class Product extends Component {
         editting : false
       })
       console.log(this.txtName.value);
+      this.props.edit (this.props.index, this.txtName.value);
     }
   }
-
+  btnDelete = () => {
+    this.props.delete(this.props.index);
+  }
   convert_to_slug = (str) =>
   {
       // Chuyển hết sang chữ thường
@@ -63,7 +66,8 @@ export default class Product extends Component {
 
   renderNornal = () => {
     return <div className="btn-group">
-              <button type="button" className="btn btn-sm  btn-danger" onClick={() => this.buttonEdit(true)}>Edit</button>
+              <button type="button" className="btn btn-sm  btn-primary" onClick={() => this.buttonEdit(true)}>Edit</button>
+              <button type="button" className="btn btn-sm  btn-danger" onClick={() => this.btnDelete()}>Del</button>
               <Link className="btn btn-sm  btn-info" to={"/post/" + this.props.id + "/" + this.convert_to_slug(this.props.name)  + ".html"}> View </Link>
             </div>;
   }
