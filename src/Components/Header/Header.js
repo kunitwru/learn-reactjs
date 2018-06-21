@@ -19,10 +19,10 @@ class Header extends Component {
                     <h4 className="text-white">Contact</h4>
                     <ul className="list-unstyled">
                       <li>
-                        <Link to="#" className="text-white">Follow on Twitte</Link>
+                        <Link to="/topics" className="text-white">Follow on Twitte</Link>
                       </li>
                       <li>
-                        <Link to="#" className="text-white">Like on Facebook</Link>
+                        <Link to="/about" className="text-white">Like on Facebook</Link>
                       </li>
                       <li>
                         <Link to="#" className="text-white">Email me</Link>

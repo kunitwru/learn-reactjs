@@ -14,7 +14,7 @@ class App extends Component {
       <Router>
         <div>
           <Header />
-          <main>
+          <main role="main">
               <Content />
           </main>      
           <Footer />
