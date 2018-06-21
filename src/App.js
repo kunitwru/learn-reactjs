@@ -14,17 +14,12 @@ class App extends Component {
       <Router>
         <div>
           <Header />
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8 col-md-10 mx-auto">
+          <main>
               <Content />
-              </div>
-            </div>
-          </div>      
+          </main>      
           <Footer />
-        </div>
+          </div>
       </Router>
-    
     );
   }
 }

@@ -4,36 +4,47 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
-    componentWillMount() {
-      console.log("aaaa");
-    }  
-
+ 
     render () {
         return (
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <Link to="/" className="nnavbar-brand">Navbar</Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon" />
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                  <Link to="/" className="nav-link">Home</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/about" className="nav-link">About</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/topics" className="nav-link">Topics</Link>
-                </li>
-              </ul>
-
-              <form className="form-inline my-2 my-lg-0">
-                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+          <header>
+            <div className="bg-dark collapse" id="navbarHeader" style={{}}>
+              <div className="container">
+                <div className="row">
+                  <div className="col-sm-8 col-md-7 py-4">
+                    <h4 className="text-white">About</h4>
+                    <p className="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                  </div>
+                  <div className="col-sm-4 offset-md-1 py-4">
+                    <h4 className="text-white">Contact</h4>
+                    <ul className="list-unstyled">
+                      <li>
+                        <Link to="#" className="text-white">Follow on Twitte</Link>
+                      </li>
+                      <li>
+                        <Link to="#" className="text-white">Like on Facebook</Link>
+                      </li>
+                      <li>
+                        <Link to="#" className="text-white">Email me</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </nav>
+            <div className="navbar navbar-dark bg-dark box-shadow">
+              <div className="container d-flex justify-content-between">
+                <Link to="#" className="navbar-brand d-flex align-items-center">
+                  <i className="fa fa-camera" style={{marginRight:10}}></i> 
+                  <strong>Album</strong>
+                </Link>
+                <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon" />
+                </button>
+              </div>
+            </div>
+          </header>
+
         );
       };
  }
