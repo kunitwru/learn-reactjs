@@ -18,7 +18,6 @@ class App extends Component {
             <div className="row">
               <div className="col-lg-8 col-md-10 mx-auto">
               <Content />
-              
               </div>
             </div>
           </div>      
