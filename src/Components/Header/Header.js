@@ -13,11 +13,6 @@ class Header extends Component {
                 <i className="fa fa-camera"></i>  <b>Album</b>
               </Link>
               <Link className="py-2 d-none d-md-inline-block" to="#">Tour</Link>
-              <Link className="py-2 d-none d-md-inline-block" to="#">Product</Link>
-              <Link className="py-2 d-none d-md-inline-block" to="#">Features</Link>
-              <Link className="py-2 d-none d-md-inline-block" to="#">Enterprise</Link>
-              <Link className="py-2 d-none d-md-inline-block" to="#">Support</Link>
-              <Link className="py-2 d-none d-md-inline-block" to="#">Pricing</Link>
               <Link className="py-2 d-none d-md-inline-block" to="/lien-he">Liên hệ</Link>
             </div>
           </nav>
